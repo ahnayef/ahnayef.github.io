@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA Calculator By Hrithik</title>
+  <link rel="stylesheet" href="style.css">
+  </link>
+</head>
+
+<body>
+
+  <form class="cgpaArea">
+    <label for="theory">Theory Course Result in Grade Point(Separate with comma):</label>
+    <input id="theory" type="text" placeholder="3.5, 4" required>
+    <br>
+    <label for="lab">Lab Course Result in Grade Point(Separate with comma):</label>
+    <input id="lab" type="text" placeholder="4, 2.5" required>
+    <br>
+    <label for="credit">Enter Your Credit of Course(Separate with comma): <b>For Theory 3.0 & For Lab
+        1.5</b></label><br>
+    <input id="credit" type="text" placeholder="3, 3, 1.5, 1.5" required>
+
+    <br>
+    <button type="submit">Calculate</button>
+    <button type="button" id="resetBtn"  onclick="location.reload()">Reset</button>
+    
+  </form>
+  
+    <p id="res" class="setRandomBoxShadow" >Result</p><br>
+
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
